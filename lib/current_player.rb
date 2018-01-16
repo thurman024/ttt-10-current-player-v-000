@@ -6,3 +6,10 @@ def turn_count(board)
     end
   end
 end
+
+def current_player(board)
+  turns_played = turn_count(board)
+  if turn_count == 0 || turn_count % 2 == 0
+    "X"
+  elsif turn_count % 2 != 0
+    "O"
