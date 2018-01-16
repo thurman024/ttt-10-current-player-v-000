@@ -10,9 +10,10 @@ end
 
 def current_player(board)
   turns_played = turn_count(board)
-  if turns_played == 0 || turns_played % 2 == 0
-    "X"
-  elsif turns_played % 2 != 0
-    "O"
-  end
+  #if turns_played == 0 || turns_played % 2 == 0
+  #  "X"
+  #elsif turns_played % 2 != 0
+  #  "O"
+  #end
+  return turns_played.even? ? "X" : "O"
 end
